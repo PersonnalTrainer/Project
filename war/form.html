@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Sign In</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="navbar-fixed-top.css" rel="stylesheet"> 
+</head>
+
+<body>
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<h3 class="navbar-text">
+				<span class="label label-primary">Bienvenue</span>
+			</h3>
+			<button type="button" class="btn btn-default navbar-btn"
+				onclick="self.location.href='form.html'">Sign in</button>
+			<button type="button" class="btn btn-default navbar-btn"
+				onclick="self.location.href='ha-search-screen.html'">ha-search-screen</button>
+			<button type="button" class="btn btn-default navbar-btn"
+				onclick="self.location.href='ha-result-screen.html'">ha-result-screen</button>
+			<button type="button" class="btn btn-default navbar-btn"
+				onclick="self.location.href='ha-result-detail-screen.html'">ha-result-detail-screen</button>
+			<button type="button" class="btn btn-default navbar-btn"
+				onclick="self.location.href='ha-addTraining.html'">ha-addTraining</button>
+			<button type="button" class="btn btn-default navbar-btn"
+				onclick="self.location.href='tabScreen.html'">tabScreen</button>
+		</div>
+	</nav>
+
+	<h1>Hidden</h1>
+
+
+	<div class="container">
+		<form class="form-signin">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<input type="text" class="form-control" id="inputLoginId" placeholder="Login" autofocus> 
+			<input type="text" class="form-control" id="inputEmailId" placeholder="Email address" autofocus> 
+			<input type="password" class="form-control" id="inputPwdId" placeholder="Password"> 
+			<label class="checkbox"> 
+			<input type="checkbox" value="remember-me"> Remember me
+			</label>
+			<button class="btn btn-lg btn-primary btn-block" type="button"
+				id="btnCommitId">Sign in</button>
+		</form>
+
+	</div>
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myCode.js"></script>
+</body>
+</html>

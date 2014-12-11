@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- Servlets -->
+
+	<servlet>
+		<servlet-name>FindTraining</servlet-name>
+		<servlet-class>servlet.communication.FindTrainingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindTraining</servlet-name>
+		<url-pattern>/findTraining</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckUser</servlet-name>
+		<servlet-class>servlet.communication.TestIDServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckUser</servlet-name>
+		<url-pattern>/checkUser</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>resultResearch</servlet-name>
+		<servlet-class>servlet.communication.ResultResearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>resultResearch</servlet-name>
+		<url-pattern>/resultresearch</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>resultResearchKeywords</servlet-name>
+		<servlet-class>servlet.communication.ResultResearchKeywordsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>resultResearchKeywords</servlet-name>
+		<url-pattern>/resultresearchkeywords</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>mylogin</servlet-name>
+		<servlet-class>servlet.communication.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mylogin</servlet-name>
+		<url-pattern>/mylogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>userRegistration</servlet-name>
+		<servlet-class>servlet.communication.UserRegistrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>userRegistration</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>messageHomePage</servlet-name>
+		<servlet-class>servlet.init.InitHomePageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>messageHomePage</servlet-name>
+		<url-pattern>/accueilmessage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addTrainingPlan</servlet-name>
+		<servlet-class>servlet.communication.AddTrainingPlanServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addTrainingPlan</servlet-name>
+		<url-pattern>/addtrainingplan</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>
